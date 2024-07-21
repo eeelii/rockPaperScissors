@@ -1,0 +1,104 @@
+:root {
+    --firs-color: #3D52A0;
+    --skyblue: #7091E6;
+    --bluisgray: #8697c4;
+    --lightgrayblue: #ADBBDA;
+    --pinkish: #EDEBF5;
+}
+
+body {
+    /* background: linear-gradient(249deg, rgba(61, 82, 160, 1) 10%, rgb(194, 189, 216) 60%, rgba(134, 151, 196, 1) 100%) center; */
+    background: linear-gradient(135deg, rgba(244,244,244,1) 20%, rgba(8,240,219,1) 40%, rgba(70,195,49,1) 40%);
+    background-size: cover;
+    height: 100%;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+header p {
+    font-style: italic;
+}
+.main-content {
+    display: flex;
+    align-items: center;
+    height: 500px;
+
+}
+
+.right-side-player, .left-side-player {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.left-side-player h1 {
+    color: var(--pinkish)
+}
+.winner {
+    width: 20%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.winner .score__container {
+    border: 2px solid var(--pinkish);
+    width: 40%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--firs-color);
+}
+
+.winner h2 {
+    text-transform: uppercase;
+    color: var(--pinkish);
+}
+
+.winner .score__container h3 {
+    font-size: 30px;
+    color: var(--pinkish);
+    font-family: "Orbitron", sans-serif;
+}
+
+.playerone-input {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.playerone-input button {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    background-color: var(--pinkish);
+    border: 2px solid var(--lightgrayblue);
+    color: var(--skyblue);
+}
+
+.playerone-input button:hover {
+    background-color: var(--lightgrayblue);
+    border: 2px solid var(--pinkish);
+}
+
+.playerone-input button:active {
+    border: 1px solid var(--pinkish);
+}
+
+/* .left-side-player {
+    border: 2px red solid;
+    width: 50%;
+    height: 300px;
+} */
+
+img {
+    width: 150px;
+}
